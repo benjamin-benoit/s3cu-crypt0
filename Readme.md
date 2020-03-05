@@ -88,7 +88,7 @@ How? Devise some method for "scoring" a piece of English plaintext. Character fr
 
 Filename : **`ex04.xordetect.[ext]`**
 
-One of the 60-character strings in this [file](./h0l4.txt) has been encrypted by single-character XOR.
+One of the 60-character strings in this [file](./h014.txt) has been encrypted by single-character XOR.
 
 Find it.
 
