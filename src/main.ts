@@ -1,3 +1,4 @@
-import { exo01 } from './exercices';
+import { ex02 } from './exercices';
 
-console.log(exo01());
+//console.log(ex01());
+console.log(ex02());
