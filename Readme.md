@@ -2,17 +2,17 @@
 
 ## <a name='TOC'>🐼 Summary</a>
 
-* [Rules](#rules)
-* [Overview](#overview)
-* [Challenges](#challenges)
-* [Credits](#credits)
+-   [Rules](#rules)
+-   [Overview](#overview)
+-   [Challenges](#challenges)
+-   [Credits](#credits)
 
 ## <a name='overview'>🦊 Rules</a>
 
 Hi, here are some rules to carry out this story oav;
 
-* You **MUST** create a git repository named `s3cu-crypt0`
-* You **MUST** create a file called `.author` with your username followed by a newline.
+-   You **MUST** create a git repository named `s3cu-crypt0`
+-   You **MUST** create a file called `.author` with your username followed by a newline.
 
 ```sh
 ~/s3cu-crypt0 ❯❯❯ cat -e .author
@@ -24,8 +24,8 @@ heisenberg$
 
 > Don't forget, there is no useless question :-)
 
-* You **MUST** return the project before Friday May, 29 at 4:00 pm by sending an MP on slack with the link of your github repo.
-* You **MUST** add `pu-erh` user as a collaborator.
+-   You **MUST** return the project before Friday May, 29 at 4:00 pm by sending an MP on slack with the link of your github repo.
+-   You **MUST** add `pu-erh` user as a collaborator.
 
 ## <a name='overview'>🐱 Overview</a>
 
@@ -88,7 +88,7 @@ How? Devise some method for "scoring" a piece of English plaintext. Character fr
 
 Filename : **`ex04.xordetect.[ext]`**
 
-One of the 60-character strings in this [file](./h014.txt) has been encrypted by single-character XOR.
+One of the 60-character strings in this [file](src/data/h014.txt) has been encrypted by single-character XOR.
 
 Find it.
 
@@ -100,8 +100,7 @@ Filename : **`ex05.reapeatxor.[ext]`**
 
 Here is the opening stanza of an important work of the English language:
 
-`Burning 'em, if you ain't quick and nimble
-I go crazy when I hear a cymbal`
+`Burning 'em, if you ain't quick and nimble I go crazy when I hear a cymbal`
 
 Encrypt it, under the key "ICE", using repeating-key XOR.
 
@@ -109,13 +108,12 @@ In repeating-key XOR, you'll sequentially apply each byte of the key; the first 
 
 It should come out to:
 
-`0b3637272a2b2e63622c2e69692a23693a2a3c6324202d623d63343c2a26226324272765272
-a282b2f20430a652e2c652a3124333a653e2b2027630c692b20283165286326302e27282f`
+`0b3637272a2b2e63622c2e69692a23693a2a3c6324202d623d63343c2a26226324272765272 a282b2f20430a652e2c652a3124333a653e2b2027630c692b20283165286326302e27282f`
 
 Encrypt a bunch of stuff using your repeating-key XOR function.<br />
-Encrypt your mail. Encrypt your password file. Your .sig file. Get a feel for it. 
+Encrypt your mail. Encrypt your password file. Your .sig file. Get a feel for it.
 
->You aren't wasting your time with this.
+> You aren't wasting your time with this.
 
 ### 06 Implement your beloved algorithm
 
