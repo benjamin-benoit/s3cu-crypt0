@@ -1,16 +1,14 @@
-export function hextoStr(str: string) {
-    Buffer.from(str, 'hex').toString();
-}
-
 export function cipher(message: Buffer, key: Buffer) {
-    if (key.length > message.length) {
-        [message, key] = [key, message];
+    if (message && key) {
+        if (key.length > message.length) {
+            [message, key] = [key, message];
+        }
+        let result = Buffer.alloc(message.length);
+        for (let i = 0, j = 0, len = message.length; i < len; i++, j++) {
+            result[i] = message[i] ^ key[j % key.length];
+        }
+        return result;
     }
-    let result = Buffer.alloc(message.length);
-    for (let i = 0, j = 0, len = message.length; i < len; i++, j++) {
-        result[i] = message[i] ^ key[j % key.length];
-    }
-    return result;
 }
 
 export function calculateFrequency(string: string) {
@@ -47,5 +45,5 @@ export function calculateFrequency(string: string) {
     return string
         .toLowerCase()
         .split('')
-        .reduce((sum, value) => sum + (charFrequency[value] || 0), 0);
+        .reduce((prev, cur) => prev + (charFrequency[cur] || 0), 0);
 }
