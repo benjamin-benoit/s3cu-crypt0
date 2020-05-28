@@ -1,1 +1,1 @@
-export default function reapeatxor() {}
+export default function reapeatXor(str: string) {}

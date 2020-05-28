@@ -1,10 +1,9 @@
 import * as fs from 'fs';
 import singlebytexor from './ex03.singlebytexor';
-import assert from 'assert';
 
-export default function xordetect() {
-    if (fs.existsSync('src/data/h014.txt')) {
-        const file = fs.readFileSync('src/data/h014.txt', 'utf8').split('\n');
+export default function xOrDetect(path: string = 'src/data/h014.txt') {
+    if (fs.existsSync(path)) {
+        const file = fs.readFileSync(path, 'utf8').split('\n');
         let decrypted: any[] = [],
             result;
 
