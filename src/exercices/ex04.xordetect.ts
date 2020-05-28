@@ -1,5 +1,5 @@
 import * as fs from 'fs';
-import singlebytexor from './ex03.singlebytexor';
+import singleByteTexOr from './ex03.singlebytexor';
 
 export default function xOrDetect(path: string = 'src/data/h014.txt') {
     if (fs.existsSync(path)) {
@@ -8,7 +8,7 @@ export default function xOrDetect(path: string = 'src/data/h014.txt') {
             result;
 
         file.forEach((string, index) => {
-            result = singlebytexor(string);
+            result = singleByteTexOr(string);
 
             if (result) {
                 result.string = string;

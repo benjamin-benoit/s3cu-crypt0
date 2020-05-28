@@ -2,19 +2,18 @@ export function hextoStr(str: string) {
     Buffer.from(str, 'hex').toString();
 }
 
-export function cipher(msg: Buffer, key: Buffer) {
-    if (key.length > msg.length) [msg, key] = [key, msg];
-
-    let result = Buffer.alloc(msg.length);
-
-    for (let i = 0, j = 0, len = msg.length; i < len; i++, j++)
-        result[i] = msg[i] ^ key[j % key.length];
-
+export function cipher(message: Buffer, key: Buffer) {
+    if (key.length > message.length) {
+        [message, key] = [key, message];
+    }
+    let result = Buffer.alloc(message.length);
+    for (let i = 0, j = 0, len = message.length; i < len; i++, j++) {
+        result[i] = message[i] ^ key[j % key.length];
+    }
     return result;
 }
 
 export function calculateFrequency(string: string) {
-    /* Source: http://www.oxfordmathcenter.com/drupal7/node/353 */
     const charFrequency: unknown | any = {
         e: 0.12702,
         t: 0.09056,
