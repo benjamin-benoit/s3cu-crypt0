@@ -25,7 +25,7 @@ heisenberg$
 > Don't forget, there is no useless question :-)
 
 * You **MUST** return the project before Friday May, 29 at 4:00 pm by sending an MP on slack with the link of your github repo.
-* You **MUST** add `makiboto` user as a collaborator.
+* You **MUST** add `pu-erh` user as a collaborator.
 
 ## <a name='overview'>🐱 Overview</a>
 
