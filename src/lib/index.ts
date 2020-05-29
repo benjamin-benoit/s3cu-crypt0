@@ -12,7 +12,7 @@ export function cipher(message: Buffer, key: Buffer) {
 }
 
 export function calculateFrequency(string: string) {
-    const charFrequency: unknown | any = {
+    const charFrequency: Record<string, number> = {
         e: 0.12702,
         t: 0.09056,
         a: 0.08167,

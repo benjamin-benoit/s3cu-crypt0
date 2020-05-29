@@ -8,7 +8,7 @@ export default function challengeAccepted(
             text.split('').map(c => c.charCodeAt(0));
         const byteHex = (n: any) => ('0' + Number(n).toString(16)).substr(-2);
         const applySaltToChar = (code: any) =>
-            textToChars(key).reduce((a, b) => a ^ b, code);
+            textToChars(key).reduce((prev: number, cur: number) => prev ^ cur, code);
 
         return message
             .split('')

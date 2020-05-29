@@ -17,7 +17,7 @@ export default function xOrDetect(path: string = 'src/data/h014.txt') {
             }
         });
 
-        result = decrypted.reduce((x, y) => (x.score > y.score ? x : y));
+        result = decrypted.reduce((prev, cur) => (prev.score > cur.score ? prev : cur));
 
         return result;
     }
